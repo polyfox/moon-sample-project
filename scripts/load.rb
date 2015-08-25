@@ -2,7 +2,8 @@ class State
   class Instance
     def initialize(engine)
       @engine = engine
-      @sprite = Moon::Sprite.new('resources/blocks/block_16x16_007.png')
+      @texture = Moon::Texture.new('resources/blocks/block_16x16_007.png')
+      @sprite = Moon::Sprite.new(@texture)
       @sprite.opacity = 0.5
     end
 
